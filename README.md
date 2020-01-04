@@ -1,6 +1,8 @@
 # TUTORIAL STUFF FOR VAAPO
 This is just testing and learning docker. 
+
 Ultimate source of information: https://devopswithdocker.com/part1/
+
 Good music to listen while doing this: https://open.spotify.com/track/7dgGHQnSI3fM403IP3Ii0B?si=_dH89SZJTrCsivYvndzvJw
 
 # Setup, build and run
