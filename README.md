@@ -57,3 +57,30 @@ total 4
 git remote add origin git@github.com:vaaPo/defa_docker_myfirst.git
 git push -u origin master
 ```
+## copy container files
+```console
+docker container ls -a --last 3 
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+8dd873743171        youtube-dl          "/usr/local/bin/yout…"   6 minutes ago       Exited (0) 6 minutes ago                        strange_lamport
+8225261005ce        05228273f8ce        "https://imgur.com/J…"   9 minutes ago       Created                                         hopeful_hellman
+ef6aa493a3cc        05228273f8ce        "/usr/local/bin/yout…"   10 minutes ago      Exited (2) 10 minutes ago                       friendly_fermat
+docker cp "8dd873743171://mydir/Imgur-JY5tHqr.mp4" . 
+``` 
+
+## BIND Mount for the run
+To bind mount current pwd directory to /mydir in container 
+```console
+docker run -v $(pwd):/mydir youtube-dl https://imgur.com/JY5tHqr
+## for suprise for the existing container the download was done earlier :)
+[Imgur] JY5tHqr: Downloading webpage
+[download] Imgur-JY5tHqr.mp4 has already been downloaded
+[download] 100% of 190.20KiB
+```
+## push to docker-hub
+```console
+docker tag youtube-dl vaapo/youtube-dl
+docker login
+docker push vaapo/youtube-dl
+```
+
+
