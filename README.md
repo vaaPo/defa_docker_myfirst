@@ -1,12 +1,18 @@
 # TUTORIAL STUFF FOR VAAPO
 This is just testing and learning docker. 
 Ultimate source of information: https://devopswithdocker.com/part1/
+Good music to listen while doing this: https://open.spotify.com/track/7dgGHQnSI3fM403IP3Ii0B?si=_dH89SZJTrCsivYvndzvJw
 
 # Setup, build and run
 ```console
 touch local.txt
-docker build --rm -f "Dockerfile" -t 01-myfirst:latest .
-docker run -it 01-myfirst:latest 
+docker build --rm -f "Dockerfile" -t youtube-dl .
+docker run youtube-dl
+docker run youtube-dl https://imgur.com/JY5tHqr 
+[Imgur] JY5tHqr: Downloading webpage
+[download] Destination: Imgur-JY5tHqr.mp4
+[download] 100% of 190.20KiB in 00:0021MiB/s ETA 00:000
+
 ```
 # Enter interactive shell terminal and start "heilu shellissä"
 ```console
