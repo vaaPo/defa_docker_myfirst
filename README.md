@@ -1,11 +1,7 @@
 # TUTORIAL STUFF FOR VAAPO
-This is just testing and learning docker.
+This is just testing and learning docker. 
+Ultimate source of information: https://devopswithdocker.com/part1/
 
-# GIT commands for existing git repo
-```console
-git remote add origin git@github.com:vaaPo/defa_docker_myfirst.git
-git push -u origin master
-```
 # Setup, build and run
 ```console
 touch local.txt
@@ -48,3 +44,8 @@ total 4
 -rw-r--r-- 1 root root    0 Jan  4 08:35 manual.txt
 ```
 
+# GIT commands for existing git repo
+```console
+git remote add origin git@github.com:vaaPo/defa_docker_myfirst.git
+git push -u origin master
+```
